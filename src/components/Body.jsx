@@ -1,4 +1,4 @@
-import { Navigate, Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import axios from "axios";
@@ -39,5 +39,4 @@ const Body = () => {
     </div>
   );
 };
-
 export default Body;
