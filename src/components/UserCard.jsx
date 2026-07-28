@@ -19,8 +19,12 @@ function UserCard({ user }) {
   };
   return (
     <div className="card bg-base-300 w-96 shadow-sm">
-      <figure>
-        <img src={user.photoUrl} alt="photo" />
+      <figure className="h-80 overflow-hidden">
+        <img
+          src={user.photoUrl}
+          alt="photo"
+          className="w-full h-full object-cover"
+        />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{firstName + " " + lastName}</h2>
